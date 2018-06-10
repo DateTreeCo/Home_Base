@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Home Base</string>
+    <string name="yanks">Yankees</string>
+    <string name="mets">Mets</string>
+    <string name="runs">Runs</string>
+    <string name="outs">Outs</string>
+    <string name="strikes">Strikes</string>
+    <string name="reset">Reset</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="null_score">0</string>
+    <string name="background_image">Background Image</string>
+</resources>

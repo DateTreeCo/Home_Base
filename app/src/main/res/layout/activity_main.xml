@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerInside"
+        android:src="@drawable/yanksmets" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/scoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#E4002C"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/yanks"
+                    android:textColor="#003087"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusYanksRuns"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/yanks_runs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#003087"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusYanksRuns"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusYanksOuts"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/yanks_outs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#003087"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusYanksOuts"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusYanksStrikes"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/yanks_strikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#003087"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#E4002C"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusYanksStrikes"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/runs"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/outs"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/strikes"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#002D72"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/mets"
+                    android:textColor="#FC4C02"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusMetsRuns"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mets_runs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#FC4C02"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusMetsRuns"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusMetsOuts"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mets_outs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#FC4C02"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusMetsOuts"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="minusMetsStrikes"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mets_strikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/null_score"
+                        android:textColor="#FC4C02"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#002D72"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="plusMetsStrikes"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:onClick="resetAll"
+            android:text="@string/reset"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
